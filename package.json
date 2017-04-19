@@ -1,1 +1,40 @@
-{     "devDependencies": {         "angular-ui-bootstrap": "*",         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmtest-angular-ui-bootstrap",     "homepage": "https://github.com/npmtest/node-npmtest-angular-ui-bootstrap",     "repository": {         "type": "git",         "url": "https://github.com/npmtest/node-npmtest-angular-ui-bootstrap.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "#### test coverage for  [angular-ui-bootstrap (v2.5.0)](http://angular-ui.github.io/bootstrap/)  [![npm package](https://img.shields.io/npm/v/npmtest-angular-ui-bootstrap.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-angular-ui-bootstrap) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-angular-ui-bootstrap.svg)](https://travis-ci.org/npmtest/node-npmtest-angular-ui-bootstrap)",
+    "devDependencies": {
+        "angular-ui-bootstrap": "*",
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmtest/node-npmtest-angular-ui-bootstrap",
+    "keywords": [
+        "coverage",
+        "test",
+        "angular-ui-bootstrap"
+    ],
+    "license": "MIT",
+    "main": "lib.npmtest_angular_ui_bootstrap.js",
+    "name": "npmtest-angular-ui-bootstrap",
+    "nameAlias": "npmtest_angular_ui_bootstrap",
+    "nameOriginal": "npmtest-angular-ui-bootstrap",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmtest/node-npmtest-angular-ui-bootstrap.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "npm install \"kaizhu256/node-utility2#alpha\" && utility2 shDeployHeroku",
+        "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh postinstall",
+        "start": "PORT=${PORT:-8080} utility2 start test.js",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "0.0.1"
+}
