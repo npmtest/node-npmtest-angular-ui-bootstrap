@@ -1,6 +1,6 @@
 # npmtest-angular-ui-bootstrap
 
-#### test coverage for  [angular-ui-bootstrap (v2.5.0)](http://angular-ui.github.io/bootstrap/)  [![npm package](https://img.shields.io/npm/v/npmtest-angular-ui-bootstrap.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-angular-ui-bootstrap) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-angular-ui-bootstrap.svg)](https://travis-ci.org/npmtest/node-npmtest-angular-ui-bootstrap)
+#### basic test coverage for  [angular-ui-bootstrap (v2.5.0)](http://angular-ui.github.io/bootstrap/)  [![npm package](https://img.shields.io/npm/v/npmtest-angular-ui-bootstrap.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-angular-ui-bootstrap) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-angular-ui-bootstrap.svg)](https://travis-ci.org/npmtest/node-npmtest-angular-ui-bootstrap)
 
 #### Native AngularJS (Angular) directives for Bootstrap
 
@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-angular-ui-bootstrap/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-angular-ui-bootstrap/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-angular-ui-bootstrap/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-angular-ui-bootstrap/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-angular-ui-bootstrap/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-angular-ui-bootstrap/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-angular-ui-bootstrap/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-angular-ui-bootstrap/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-angular-ui-bootstrap/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-angular-ui-bootstrap/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-angular-ui-bootstrap/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-angular-ui-bootstrap/build/coverage.html/index.html)
 
@@ -112,7 +112,8 @@
         "demo": "grunt after-test && static dist -a 0.0.0.0 -H '{\"Cache-Control\": \"no-cache, must-revalidate\"}'",
         "test": "grunt"
     },
-    "version": "2.5.0"
+    "version": "2.5.0",
+    "bin": {}
 }
 ```
 
